@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black !important;
+    color: #fff !important;
+}
+#CV {
+    overflow: hidden;
+}
+span{
+    color: #ff004f;
+}
+.mail{
+    color: white;
+}
+#header {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container {
+    padding: 10px 10%;
+}
+nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+#header i {
+    display: none;
+}
+.header-text {
+    display: flex;
+}
+.avatar{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    overflow: hidden;
+}
+.avatar img {
+    border-radius: 25px;
+}
+.header-text .content{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    height: 110px;
+}
+.head .title-big>:first-child{
+    font-size: 120px;
+    letter-spacing: 4px;
+    color: hsla(0,0%,100%,.07);
+    position: absolute;
+    z-index: 5;
+}
+.information{
+    margin-right: 50px;
+    line-height: 40px
+}
+.information span {
+    color: hsla(0,0%,100%,.37);
+}
+#about .content{
+    display: flex;
+}
+.about .detail{
+    display: flex;
+    padding-top: 10px;
+}
+.left{
+    margin-right: 50px;
+}
+.border{
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+    border: 1px solid hsla(0,8%,93%,.13);
+}
+.border ul {
+    padding: 10px;
+}
+.border ul li {
+    list-style-type: none;
+}
+/* Portfolio */
+#portfolio, #contact{
+    padding: 120px 0 0 0;
+}
+.portfolio-content{
+    text-align: center;
+}
+.portfolio-data {
+    line-height: 35px;
+    z-index: 1;
+}
+.portfolio-img {
+    width: 307px;
+    height: 290px;
+}
+.portfolio-button {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ff004f;
+    padding: 5px;
+    border-radius: 30px;
+}
+/* Contact */
+#contact .content{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 30px;
+    padding: 0 50px;
+}
+#contact .content .left .icon {
+    font-size: 40px;
+}
+#contact .content .left .social-media{
+    font-size: 20px;
+}
+#contact .content .left .social-media a {
+    margin-right: 5px;
+    color: white;
+}
+#contact .content .right .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+#contact .content .right .top input {
+    height: 45px;
+    background-color: #252525;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+}
+#contact .top input[type=text]:focus {
+    border: 2px solid #ff004f;
+    outline: none;
+}
+textarea:focus {
+    border: 2px solid #ff004f !important;
+    outline: none;
+}
+#contact .content .right .bottom {
+    margin-top: 30px;
+}
+#contact .content .right .bottom textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #252525;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+}
+#contact .content .right .button {
+    width: 230px;
+    height: 60px;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid #ff004f;
+    justify-content: space-between;
+    padding-left: 30px;
+    margin: 10px 0;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 0 #ff004f;
+    transition: .3s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .content .button:hover {
+    background-color: #ff004f;
+    cursor: pointer;
+}
+#contact .button i {
+    padding: 10px;
+}

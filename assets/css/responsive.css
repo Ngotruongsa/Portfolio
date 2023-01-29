@@ -1,0 +1,132 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    #contact .content .right .top {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    .avatar img {
+        width: 100%;
+    }
+    .information {
+        margin: 0;
+        line-height: unset;
+    }
+    #about .content {
+        flex-direction: column;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header-text .content {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        left: 30%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact .content {
+        display: unset;
+    }
+    #contact .right {
+        margin-top: 15px;
+    }
+    .avatar {
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        left: 30%;
+        overflow: hidden;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .head .title-big>:first-child {
+        font-size: 80px;
+    }
+    .avatar img {
+        width: 100%;
+    }
+    .header-text {
+        margin-top: 55px;
+    }
+    .header-text .content {
+        left: 5%;
+        width: 90%;
+        height: 100%;
+        margin-top: 117px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .avatar {
+        position: absolute;
+        left: 22%;
+        width: unset;
+    }
+    .information span{
+        display: block;
+        color: hsla(0,0%,100%,.37);
+    }
+    .right {
+        margin-left: -47px;
+    }
+    #about {
+        margin-top: 50px;
+    }
+    #contact .content {
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    #contact .right {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .mobile-menu-btn{
+        font-size: 30px;
+    }
+    #header nav>li {
+        display: block;
+    }
+    #header li {
+        width: 84%;
+    }
+    #header .navbar {
+        position: fixed;
+        z-index: 1;
+        background-color: black;
+        width: 100%;
+        top: 0;
+    }
+    #header i {
+        display: block;
+    }
+    .navbar-toggler:focus, .navbar-toggler:hover {
+        text-decoration: none;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .collapse:not(.show) {
+        display: none;
+    }
+}
